@@ -43,6 +43,18 @@ Avg Trade profit - 936.06 (0.22%)
 
 <img width="917" alt="image" src="https://github.com/Tharunn25/5-20-Ema-corssover-strategy/assets/98308855/c1785e24-97cd-4ce4-b348-518e94581e23">
 
+## How to add it to your Trading view 
+
+Step 1 : copy the above text file (as it is pinescript it doesn't have any format to save).
+
+Step 2 : Open your Trading View site.
+
+Step 3 : on the left slide Menu You can find the pine editor.
+
+Step 4 : copy the file in the compiler and press add to chart button.
+
+Step 5 : now your ready to go.
+
 
 
 

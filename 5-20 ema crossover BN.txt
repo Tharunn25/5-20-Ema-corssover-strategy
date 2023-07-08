@@ -1,0 +1,22 @@
+//@version=5
+strategy("EMA Crossover Strategy", overlay=true)
+
+// Define the input variables
+emaShortLength = input(5, title="Short EMA Length")
+emaLongLength = input(20, title="Long EMA Length")
+
+// Calculate the EMAs
+emaShort = ta.ema(close, emaShortLength)
+emaLong = ta.ema(close, emaLongLength)
+
+// Generate buy and sell signals
+buySignal = ta.crossover(emaShort, emaLong)
+sellSignal = ta.crossunder(emaShort, emaLong)
+
+// Plot the EMAs
+plot(emaShort, color=color.blue, title="Short EMA")
+plot(emaLong, color=color.red, title="Long EMA")
+
+// Execute the buy and sell signals
+strategy.entry("Buy", strategy.long, when=buySignal)
+strategy.entry("Sell", strategy.short, when=sellSignal)

@@ -7,6 +7,12 @@ The EMAs are calculated using the ta.ema() function in Pine Script, which takes 
 
 Buy signals are generated when the short EMA crosses above the long EMA, indicating a potential upward trend. Conversely, sell signals are generated when the short EMA crosses below the long EMA, indicating a potential downward trend. The strategy uses the ta.crossover() and ta.crossunder() functions to identify these crossover points.
 
+## Python code for the above strategy
+
+https://github.com/Tharunn25/5-20-ema-python
+
+
+
 ## Outcome of the strategy In BankNifty with capital 1 lakh Rs
 
 15 - Minutes
